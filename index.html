@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 임현정 - 포스타입 </title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- swiper plugin - js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- slick slide -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- popup menu -->
+    <link rel="stylesheet" href="/dist/css/tiny-popup-menu.css" />
+    <script src="/dist/tiny-popup-menu.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- ==================================
+        header
+        ======================================= -->
+        <header>
+            <div class="nav">
+                <!-- pc menu -->
+                <div class="p_menu">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./images/logo-long.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="p_menu_list">
+                        <li><a href="#">발견</a></li>
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                    <div class="icon">
+                        <a><img src="./images/Search.svg" alt="search"></a>
+                        <a><img src="./images/Box.svg" alt="box"></a>
+                        <details class="dropdown">
+                            <summary role="button">
+                                <span class="sideMenuBtn"><a><img src="./images/my.svg" alt="my"></a></span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/my.svg" alt="my"> &amp;blue</a>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a href="#">구독</a></li>
+                                <li><a href="#">알림</a></li>
+                                <li><a href="#">메시지</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">포인트/수익</a></li>
+                                <li><a href="#">주문내역</a></li>
+                                <li><a href="#">설정</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <!-- mobile menu -->
+                <div class="m_menu">
+                    <div class="m_right_menu">
+                        <div class="m_logo">
+                            <a href="#">
+                                <img src="./images/logo-long.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="m_icon">
+                            <a><img src="./images/Search.svg" alt="search"></a>
+                            <a><img src="./images/Box.svg" alt="box"></a>
+                            <a class="m_button"><img src="./images/my.svg" alt="my"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="black_bg"></div>
+        <div class="m_side_bar">
+            <!-- x 버튼 -->
+            <div class="closeBtn"><a href="#"><img src="./images/Close.svg" alt="close"></a></div>
+            <div class="m_profile">
+                <a href="#"><img src="./images/my.svg" alt="my">&amp;blue</a>
+            </div>
+            <div class="main_menu">
+                <ul class="box_menu">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">발견</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">컬렉션</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li><a href="#">구독</a></li>
+                    <li><a href="#">알림</a></li>
+                    <li><a href="#">메시지</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">포인트/수익</a></li>
+                    <li><a href="#">주문내역</a></li>
+                    <li><a href="#">설정</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ==================================
+        main
+        ======================================= -->
+        <main>
+            <section id="main_slides">
+                <!-- pc -->
+                <div class="slide-wrapper-pc">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                        <!-- 인디케이터 -->
+                        <div class="swiper-pagination slides-pagenation"></div>
+                        <!-- 이전,다음버튼 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="slide-wrapper-mobile">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                        <!-- 인디케이터 -->
+                        <div class="swiper-pagination slides-pagenation"></div>
+                        <!-- 이전,다음버튼 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="tagBoxSet">
+                <div class="tagBox-wrapper">
+                    <div class="tagBox">
+                        <h3>실시간 인기 태그</h3>
+                        <div class="box">
+                            <div class="tag-wrapper">
+                                <a href="#">#웹툰</a>
+                                <a href="#">#만화</a>
+                                <a href="#">#글쓰기문법</a>
+                                <a href="#">#부동산_제테크</a>
+                                <a href="#">#포스타입_오리지널</a>
+                                <a href="#">#2024새해_첫음식</a>
+                                <a href="#">#웹소설</a>
+                                <a href="#">#크리스마스</a>
+                                <a href="#">#창작소재</a>
+                                <a href="#">#2.5d</a>
+                                <a href="#">#슬램덩크</a>
+                                <a href="#">#솜인형_도안</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tagBox">
+                        <h3>나의 관심 태그</h3>
+                        <div class="box">
+                            <div class="tag-wrapper">
+                                <a href="#">#간편식</a>
+                                <a href="#">#뮤지컬</a>
+                                <a href="#">#사주타로</a>
+                                <a href="#">#2024_신년운세</a>
+                                <a href="#">#여행</a>
+                                <a href="#">#카카오톡_테마</a>
+                                <a href="#">#클립스튜디오</a>
+                                <a href="#">#개인제작</a>
+                                <a href="#">#자기계발</a>
+                                <a href="#">#프론트엔드</a>
+                                <a href="#">#일러스트_기초</a>
+                                <a href="#">#2024다이어리</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="subscribe">
+                <div class="subscribe-inner">
+                    <h3>구독 업데이트</h3>
+                    <div class="drag-slider">
+                        <!-- 1 -->
+                        <div class="slider-item">
+                            <div class="thumnailBox"><a><img src="./images/subscribe_thumbnail/thumbnail.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>글로 밥 벌어 먹고 살기 5년차 : 5. 목표는 이사가기</p>
+                                    </div>
+                                    <div class="info">
+                                        <div class="author">
+                                            <a><img src="./images/subscribe_profile/profile.png" alt="profile"></a>
+                                            <p>새벽달S</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>2024. 01. 15.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>글로소득</li>
+                                            <li>퇴사</li>
+                                            <li>일상</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="slider-item">
+                            <div class="thumnailBox"><a><img src="./images/subscribe_thumbnail/thumbnail-1.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>[굿노트 노트쉘프 스티커] 겨울 나기 스티커</p>
+                                    </div>
+                                    <div class="info">
+                                        <div class="author">
+                                            <a><img src="./images/subscribe_profile/profile-1.png" alt="profile"></a>
+                                            <p>솔립</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>2024. 01. 15.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>스티커</li>
+                                            <li>굿노트</li>
+                                            <li>창작소재</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="slider-item">
+                            <div class="thumnailBox"><a><img src="./images/subscribe_thumbnail/thumbnail-2.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>괴테 독일어 자격증 취득하기 - B1레벨</p>
+                                    </div>
+                                    <div class="info">
+                                        <div class="author">
+                                            <a><img src="./images/subscribe_profile/profile-2.png" alt="profile"></a>
+                                            <p>독립하버</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>2024. 01. 14.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>어학</li>
+                                            <li>독일어</li>
+                                            <li>자격증</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="slider-item">
+                            <div class="thumnailBox"><a><img src="./images/subscribe_thumbnail/thumbnail-3.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>왹냐 : 지구활동보고서 05</p>
+                                    </div>
+                                    <div class="info">
+                                        <div class="author">
+                                            <a><img src="./images/subscribe_profile/profile-3.png" alt="profile"></a>
+                                            <p>왹냐</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>2024. 01. 14.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>웹툰</li>
+                                            <li>드라마</li>
+                                            <li>sf</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="slider-item">
+                            <div class="thumnailBox"><a><img src="./images/subscribe_thumbnail/thumbnail-4.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <a>
+                                            <p>CHOMI│apk 그로서리 카카오톡 테마 - 안드로이드</p>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="author">
+                                            <a><img src="./images/subscribe_profile/profile-4.png" alt="profile"></a>
+                                            <p>CHOMI</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>2024. 01. 13.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>카톡테마</li>
+                                            <li>창작소재</li>
+                                            <li>apk</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="recommend">
+                <div class="recommend_inner">
+                    <h3>이런 콘텐츠는 어떠세요?</h3>
+                    <div class="box-wrapper">
+                        <!-- 1 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">팔아요 붕어빵 굿노트 스티커</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">포테톳</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">여러분은 겨울에 어떤 간식을 좋아하시나요 전 붕어빵(팥!!!)을 주로 사 먹습니다 집에 갈 때 사 먹는 재미가 있었는데
+                                            요즘에는
+                                            붕어빵 포장마차가 잘 안 보여서 슬프네요 그냥 만들어 먹는 게 낫지 않을까... 하는 생각에 만들어본 붕어빵을 테마로 한 🎈굿노트
+                                            스티커🎈입니다. [72시간 무료공유]
+                                            01/13 pm 10:00~ 01/16 pm 10:00 무료 발행 후 유료로 전환됩니다</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">창작소재</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">굿노트</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">스티커</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">붕어빵</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">동네의 연말 풍경</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">한별in플랑드르</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">유난히 바빴던 2023년이 드디어 지나갑니다. 시골의 태풍 속에서 크리스마스를 맞이하며 조금이라도 연말 분위기를 내보고자
+                                            릴과 그
+                                            주변의 겨울 풍경을 보여드리려 합니다.</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">문화</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">여행</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">프랑스</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">크리스마스</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail-1.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">라플라스의 부등식 17</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">하녹</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">줄이 빠져나갔다. 체온과 맞닿은 눈이 녹듯이, 한 움큼 쥔 모래가 흘러내리듯이 손 틈을 지나갔다. 밧줄로 연결된 무게와
+                                            중력이
+                                            절벽 끝으로 모였다.</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">웹소설</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">sf</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">현대판타지</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail-2.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">9. 방랑기 (4)</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">조이</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">다운타운 집에서 함께 살게 된 룸메이트 이야기를 빼놓을 수가 없겠다. 나는 막 이사 들어왔고 그 친구는 한 달 뒤면
+                                            한국으로
+                                            돌아가는, 아주 짧은 시한부 룸메이트였다. 도도한 깍쟁이 같은 첫인상에 스쳐 지나갈 인연 중 하나겠거니 짐작한 것과</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">해외생활</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">캐나다</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">워킹홀리데이</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail-3.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">2024년 운세 - 을목 일간</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">사주보는라뽀</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">을목이 간만에 좋은 얘기를 듣는 것 같네요. 관계운이 좋습니다. 지나간 사람에 대한 미련을 잘 정리한다면 새로운 사람,
+                                            나를
+                                            도와줄 이와 만날 수 있습니다. 또는 지금의 관계와 더 돈독해질 수 있어요. 좋은 제안이 있습니다.</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">사주</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">운세</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">지식</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">문화</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail-4.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="box-item">
+                            <div class="box-inner">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">[ 일러스트 소재 ] 화염, 불티 브러쉬</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#">SPAP</a>
+                                    </div>
+                                    <div class="contents">
+                                        <a href="#">툭툭 간편하게 화염과 불티를 표현할 수 있는 도장 브러쉬 2종입니다. 표준 레이어에 그리는 것보다 ' 하드 라이트 '
+                                            레이어로
+                                            그리는 게 더 리얼한 화염을 표현할 수 있습니다.</a>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="roundBox">
+                                            <a href="#">웹툰</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">일러스트</a>
+                                        </div>
+                                        <div class="roundBox">
+                                            <a href="#">브러쉬</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumnailBox"><a href="#"><img
+                                            src="./images/recommend_thumbnail/thumbnail-5.png" alt="thumnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 새로고침 -->
+                    <div class="btnBox">
+                        <div class="btn">
+                            <a>
+                                <span class="material-symbols-rounded">refresh</span>
+                                <span>새로고침</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="bestposts">
+                <div class="bestposts-inner">
+                    <h3>오늘 인기 포스트</h3>
+                    <div class="theme">
+                        <ul>
+                            <li>웹툰</li>
+                            <li>웹소설</li>
+                            <li>창작소재</li>
+                            <li>일러스트</li>
+                            <li>일상</li>
+                            <li>자기계발</li>
+                            <li><a><img src="./images/Setting.svg" alt="setting"></a></li>
+                        </ul>
+                    </div>
+                    <div class="post-list">
+                        <!-- 1 -->
+                        <div class="post-item">
+                            <div class="thumnailBox"><a><img src="./images/best_thumbnail/thumbnail.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>파닥파닥 대왕이네 68화</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>부처</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>웹툰</li>
+                                            <li>일상</li>
+                                            <li>개그</li>
+                                            <li>꿈</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="post-item">
+                            <div class="thumnailBox"><a><img src="./images/best_thumbnail/thumbnail-1.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>[단편] CURTAIN CALL .final</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>Killer</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>웹툰</li>
+                                            <li>단편</li>
+                                            <li>창작</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="post-item">
+                            <div class="thumnailBox"><a><img src="./images/best_thumbnail/thumbnail-2.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>5탄 [달까마귀]</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>명</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>웹툰</li>
+                                            <li>로맨스</li>
+                                            <li>동양풍</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="post-item">
+                            <div class="thumnailBox"><a><img src="./images/best_thumbnail/thumbnail-3.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>자취생과 우렁각시</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>SHORO</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>웹툰</li>
+                                            <li>gl</li>
+                                            <li>일상</li>
+                                            <li>개그</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 더보기 -->
+                    <div class="btnBox">
+                        <div class="btn">
+                            <a>
+                                <span class="material-symbols-rounded">more_horiz</span>
+                                <span>더보기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="newposts">
+                <h3>새로 나온 포스트</h3>
+                <div class="theme">
+                    <ul>
+                        <li>웹툰</li>
+                        <li>웹소설</li>
+                        <li>창작소재</li>
+                        <li>일러스트</li>
+                        <li>일상</li>
+                        <li>자기계발</li>
+                        <li><a><img src="./images/Setting.svg" alt="setting"></a></li>
+                    </ul>
+                </div>
+                <div class="post-list">
+                    <!-- 1 -->
+                    <div class="post-item">
+                        <div class="post-inner">
+                            <div class="thumnailBox"><a><img src="./images/new_thumbnail/thumbnail.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <p>작가가 실천해야 할 일의 목록</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>노바디</p>
+                                    </div>
+                                    <div class="tags">
+                                        <ul>
+                                            <li>글쓰기</li>
+                                            <li>작가되는법</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="post-item">
+                        <div class="thumnailBox"><a><img src="./images/new_thumbnail/thumbnail-1.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="infobox">
+                            <div class="text">
+                                <div class="title">
+                                    <p>PART3. 향수의 구조</p>
+                                </div>
+                                <div class="author">
+                                    <p>Chériall(셰리올)</p>
+                                </div>
+                                <div class="tags">
+                                    <ul>
+                                        <li>조향사</li>
+                                        <li>향수</li>
+                                        <li>공예</li>
+                                        <li>클래스</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="post-item">
+                        <div class="thumnailBox"><a><img src="./images/new_thumbnail/thumbnail-2.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="infobox">
+                            <div class="text">
+                                <div class="title">
+                                    <p>새해 계획 100% 이루는 법</p>
+                                </div>
+                                <div class="author">
+                                    <p>얼기 전 눈사람</p>
+                                </div>
+                                <div class="tags">
+                                    <ul>
+                                        <li>에세이</li>
+                                        <li>자기계발</li>
+                                        <li>책</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="post-item">
+                        <div class="thumnailBox"><a><img src="./images/new_thumbnail/thumbnail-3.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="infobox">
+                            <div class="text">
+                                <div class="title">
+                                    <p>돈, 써야할 때 vs 아껴야할 때</p>
+                                </div>
+                                <div class="author">
+                                    <p>윤슬yeonseul</p>
+                                </div>
+                                <div class="tags">
+                                    <ul>
+                                        <li>경제</li>
+                                        <li>제태크</li>
+                                        <li>자기계발</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 더보기 -->
+                <div class="btnBox">
+                    <div class="btn">
+                        <a>
+                            <span class="material-symbols-rounded">more_horiz</span>
+                            <span>더보기</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="collection">
+                <h3>컬렉션</h3>
+                <div class="indicator">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="center-slider">
+                    <!-- 1 -->
+                    <div class="center-item">
+                        <div class="thumnailBox"><a><img src="./images/collection_thumbnail/thumbnail.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                <p>새해맞이 시간 관리 노하우</p>
+                            </div>
+                            <div class="info">
+                                <p>포스타입과 함께라면 2024년이 두렵지 않아!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="center-item">
+                        <div class="thumnailBox"><a><img src="./images/collection_thumbnail/thumbnail-1.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                <p>포스타입 오리지널</p>
+                            </div>
+                            <div class="info">
+                                <p>POSTYPE ORIGINAL 포스타입과 함께 기획, 제작, 유통한 작가님과 작품</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="center-item">
+                        <div class="thumnailBox"><a><img src="./images/collection_thumbnail/thumbnail-2.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                <p>포스타입 크리에이터 인터뷰</p>
+                            </div>
+                            <div class="info">
+                                <p>에디터가 만난 포스타입 작가님의 심층 인터뷰</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="center-item">
+                        <div class="thumnailBox"><a><img src="./images/collection_thumbnail/thumbnail-3.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                <p>글쓰기의 모든 것</p>
+                            </div>
+                            <div class="info">
+                                <p>"저도 글을 쓸 수 있을까요?" 작가님이 공유하는 글쓰기 A to Z 가이드</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="center-item">
+                        <div class="thumnailBox"><a><img src="./images/collection_thumbnail/thumbnail-4.png"
+                                    alt="thumnail"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">
+                                <p>누워서도 갈 수 있는 랜선 여행</p>
+                            </div>
+                            <div class="info">
+                                <p>포스타입과 함께 떠나는 이불 속 랜드마크</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 더보기 -->
+                <div class="btnBox">
+                    <div class="btn">
+                        <a>
+                            <span class="material-symbols-rounded">more_horiz</span>
+                            <span>더보기</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="store">
+                <h3>스토어</h3>
+                <div class="post-list">
+                    <!-- 1 -->
+                    <div class="post-item">
+                        <div class="post-inner">
+                            <div class="thumnailBox"><a href="#"><img src="./images/store_thumbnail/thumbnail.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">피치 래빗 파우치</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#"><img src="./images/subscribe_profile/profile.png" alt="profile"></a>
+                                        <a href="#">별빛속삭임</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="post-item">
+                        <div class="post-inner">
+                            <div class="thumnailBox"><a href="#"><img src="./images/store_thumbnail/thumbnail-1.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">대용량 녹물 샤워기 식수 킬링필터</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#"><img src="./images/subscribe_profile/profile-1.png"
+                                                alt="profile"></a>
+                                        <a href="#">조나단 김</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="post-item">
+                        <div class="post-inner">
+                            <div class="thumnailBox"><a href="#"><img src="./images/store_thumbnail/thumbnail-2.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">핸드메이드 컵받침 3장세트</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#"><img src="./images/subscribe_profile/profile-2.png"
+                                                alt="profile"></a>
+                                        <a href="#">주문제작 휴식중</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="post-item">
+                        <div class="post-inner">
+                            <div class="thumnailBox"><a href="#"><img src="./images/store_thumbnail/thumbnail-3.png"
+                                        alt="thumnail"></a>
+                            </div>
+                            <div class="infobox">
+                                <div class="text">
+                                    <div class="title">
+                                        <a href="#">그림책 &lt;잴리구리 이야기&gt;</a>
+                                    </div>
+                                    <div class="author">
+                                        <a href="#"><img src="./images/subscribe_profile/profile-3.png"
+                                                alt="profile"></a>
+                                        <a href="#">해미</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 더보기 -->
+                <div class="btnBox">
+                    <div class="btn">
+                        <a>
+                            <span class="material-symbols-rounded">more_horiz</span>
+                            <span>더보기</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 최상단 이동 화살표 -->
+            <a href="#" class="btnTop"><img src="./images/btnTop.svg" alt="최상단 이동 화살표"></a>
+        </main>
+        <!-- ==================================
+        footer
+        ======================================= -->
+        <footer>
+            <div class="innerFooter">
+                <div class="info-wrapper">
+                    <div class="left-info">
+                        <div class="menu">
+                            <ul>
+                                <li>서비스 소개</li>
+                                <li>이용약관</li>
+                                <li>개인정보처리방침</li>
+                                <li>청소년보호정책</li>
+                                <li>도움 센터</li>
+                                <li>권리침해신고센터</li>
+                                <li>회사 소개</li>
+                                <li>문의하기</li>
+                            </ul>
+                        </div>
+
+                        <div class="postype-info">
+                            <ul>
+                                <li>주식회사 포스타입</li>
+                                <li>사업자등록번호: 786-86-00336</li>
+                                <li>통신판매업신고번호: 2018-서울강남-02900</li>
+                                <li>대표자명: 신규섭</li>
+                                <li>주소: 서울시 강남구 테헤란로4길 5, 6층</li>
+                                <li>연락처: 02-6956-0827</li>
+                            </ul>
+                        </div>
+                        <div class="notice">
+                            <p>
+                                포스타입은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 포스타입은 콘텐츠, 거래정보 및 거래에 대하여 책임을 지지 않습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <div class="site">
+                            <div class="icon">
+                                <a href="#"><img src="./images/footer_icon/pt.svg" alt="postype"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><img src="./images/footer_icon/x.svg" alt="x"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><img src="./images/footer_icon/ins.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                        <p>
+                            © POSTYPE, INC.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- 스와이퍼 슬라이드 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // swiper plugin
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000, // 슬라이드 간의 간격을 밀리초 단위로 설정 (예: 2000 밀리초 = 2초)
+                disableOnInteraction: false, // 사용자 상호 작용 후에도 자동 슬라이드 계속
+            },
+        });
+    </script>
+    <!-- 드래그 슬라이드 -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
