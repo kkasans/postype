@@ -1,5 +1,4 @@
-@charset "UTF-8";
-* { margin: 0; padding: 0; font-family: 'Noto Sans KR'; } 
+@charset "UTF-8";* { margin: 0; padding: 0; font-family: 'Noto Sans KR'; } 
 
 body { background-color: #fcfcfc; display: flex; justify-content: center; align-items: center; } 
 
@@ -78,22 +77,22 @@ hr { border: 0px; border-top: 1px solid #EBEBEB; }
 
 .black_bg { position: fixed; z-index: 9999999; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: none; } 
 
-.m_side_bar { position: fixed; z-index: 99999999; display: none; background-color: #fff; width: 60%; right: 0; height: 100%; /* margin-top: -90px; */}
+.m_side_bar { position: fixed; z-index: 99999999; display: none; background-color: #fff; width: 60%; right: 0; height: 100%; /* margin-top: -90px; */ } 
 
 /* X버튼 */
 .m_side_bar .closeBtn { float: right; margin-right: 20px; } 
 
 .m_side_bar .closeBtn img { margin-top: 20px; display: block; width: 24px; height: 24px; } 
 
-.m_side_bar .m_profile { font-size: 28px; margin: 90px auto 30px 60px; } 
+.m_side_bar .m_profile { font-size: 1.3em; margin: 70px auto 20px 40px; } 
 
 .m_side_bar .m_profile img { padding-right: 10px; } 
 
-.m_side_bar li { margin-top: 40px; margin-left: 60px; font-size: 1.4em; z-index: 99999; line-height: 0.5; } 
+.m_side_bar li { margin-top: 35px; margin-left: 40px; font-size: 1.2em; z-index: 99999; line-height: 0.5; } 
 
 .m_side_bar li a { display: block; color: #333; text-align: left; } 
 
-.box_menu { background-color: #EBEBEB; line-height: 0.5; padding: 20px 0; margin-top: 20px; } 
+.box_menu { background-color: #EBEBEB; line-height: 0.5; padding: 15px 0; } 
 
 /* ======================================================
  main
@@ -132,6 +131,11 @@ main .btnTop img { border-radius: 50px; background-color: #fff; border: 1px soli
 .slide-wrapper-mobile .swiper-slide:nth-child(3) { background: #FFCCD2 url("../images/banner_m3.png")no-repeat center; } 
 
 .slide-wrapper-mobile .swiper-slide:nth-child(4) { background: #FFFF00 url("../images/banner_m4.png")no-repeat center; } 
+
+/* 이전 다음 화살표 */
+div.swiper-button-prev { position: absolute; left: 5%; color: #ffffff; text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20) } 
+
+div.swiper-button-next { position: absolute; right: 5%; color: #ffffff; text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20) } 
 
 .swiper-pagination { height: 50px; } 
 
@@ -192,7 +196,7 @@ main .btnTop img { border-radius: 50px; background-color: #fff; border: 1px soli
 
 #recommend { position: relative; width: 100%; height: auto; margin-top: 60px; } 
 
-.recommend_inner { margin-top: 20px; position: relative; height: auto; overflow: hidden; padding: 0 20px; max-width: 1120px; margin: 0 auto; }
+.recommend_inner { margin-top: 20px; position: relative; height: auto; overflow: hidden; padding: 0 20px; max-width: 1120px; margin: 0 auto; } 
 
 #recommend .box-wrapper { max-width: 1120px; height: auto; margin: 0 auto; margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; width: 100%; } 
 
@@ -277,7 +281,7 @@ main .btnTop img { border-radius: 50px; background-color: #fff; border: 1px soli
 
 /* 컬렉션 */
 
-#collection { position: relative; height: auto; width: 100%; margin-top: 60px; } 
+#collection { position: relative; height: 100%; width: 100%; margin-top: 60px; } 
 
 #collection .collection-inner { margin-top: 20px; position: relative; height: auto; padding: 0 20px; max-width: 1120px; margin: 0 auto; } 
 
@@ -339,27 +343,27 @@ footer { position: relative; width: 100%; height: auto; margin-top: 60px; backgr
 
 .m-footer { position: relative; height: auto; padding: 60px 20px; max-width: 1120px; margin: 0 auto; text-align: center; display: none; } 
 
-.m-footer .site { display: flex; margin: 0 auto; width: 164px; justify-content: space-between; }
+.m-footer .site { display: flex; margin: 0 auto; width: 120px; justify-content: space-between; } 
 
-.m-footer .site .icon img { width: 48px; height: 48px; } 
+.m-footer .site .icon img { width: 32px; height: 32px; } 
 
-.m-footer .menu ul { display: flex; flex-wrap: wrap; gap: 15px; margin: 0 auto; margin-top: 30px; justify-content: space-between; } 
+.m-footer .menu ul { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 auto; margin-top: 30px; justify-content: space-between; } 
 
-.m-footer .menu ul li { cursor: pointer; font-size: 18px; } 
+.m-footer .menu ul li { cursor: pointer; font-size: 16px; } 
 
-.m-footer .right-info { margin-top: 60px; font-size: 20px; } 
+.m-footer .right-info { margin-top: 60px; font-size: 14px; } 
 
 .m-footer .postype-info ul { display: flex; flex-wrap: wrap; word-wrap: break-word; gap: 3px 15px; margin: 0 auto; margin-top: 30px; } 
 
-.m-footer .postype-info ul li { font-size: 16px; color: #7C7C7C; } 
+.m-footer .postype-info ul li { font-size: 14px; color: #7C7C7C; } 
 
-.m-footer .postype-info ul li:nth-child(2n) { position: relative; margin-left: 5px; padding-left: 18px; } 
+.m-footer .postype-info ul li:nth-child(2n) { position: relative; margin-left: 0px; padding-left: 10px; } 
 
-.m-footer .postype-info ul li:nth-child(2n)::after { position: absolute; left: 0; top: 5px; content: ""; width: 1px; height: 17px; background-color: #7C7C7C; } 
+.m-footer .postype-info ul li:nth-child(2n)::after { position: absolute; left: 0; top: 5px; content: ""; width: 1px; height: 15px; background-color: #7C7C7C; } 
 
 .m-footer .notice { margin: 0 auto; margin-top: 30px; } 
 
-.m-footer .notice p { font-size: 16px; color: #7C7C7C; line-height: 1.6; } 
+.m-footer .notice p { font-size: 14px; color: #7C7C7C; line-height: 1.6; text-align: left; } 
 
 /* ======================================================
  tablet+mobile size
