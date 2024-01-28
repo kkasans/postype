@@ -1,29 +1,12 @@
 // slick slide
 $('.center-slider').slick({
   centerMode: true,
-  centerPadding: '165px',
+  centerPadding: '180px',
+  variableWidth: true,
   slidesToShow: 3,
   prevArrow: $('.swiper-button-prev'),
   nextArrow: $('.swiper-button-next'),
-  responsive: [{
-      breakpoint: 1024,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '170px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '175px',
-        slidesToShow: 3
-      }
-    },
-  ]
+  
 });
 // drag slide
 $('.drag-slider').slick({
