@@ -84,15 +84,15 @@ hr { border: 0px; border-top: 1px solid #EBEBEB; }
 
 .m_side_bar .closeBtn img { margin-top: 20px; display: block; width: 24px; height: 24px; } 
 
-.m_side_bar .m_profile { font-size: 1.3em; margin: 70px auto 20px 40px; } 
+.m_side_bar .m_profile { font-size: 1.1em; margin: 70px auto 20px 40px; } 
 
 .m_side_bar .m_profile img { padding-right: 10px; } 
 
-.m_side_bar li { margin-top: 35px; margin-left: 40px; font-size: 1.2em; z-index: 99999; line-height: 0.5; } 
+.m_side_bar li { margin-top: 30px; margin-left: 40px; font-size: 1em; z-index: 99999; line-height: 0.5; } 
 
 .m_side_bar li a { display: block; color: #333; text-align: left; } 
 
-.box_menu { background-color: #EBEBEB; line-height: 0.5; padding: 15px 0; } 
+.box_menu { background-color: #EBEBEB; line-height: 0.5; padding: 10px 0; } 
 
 /* ======================================================
  main
@@ -267,7 +267,7 @@ div.swiper-button-next { position: absolute; right: 5%; color: #ffffff; text-sha
 
 .post-item .text { width: 100%; } 
 
-.post-item .text .author { font-size: 16px; cursor: pointer; } 
+.post-item .text .author { margin-top: 10px; font-size: 16px; cursor: pointer; } 
 
 .post-item .text .tags ul { margin-top: 15px; display: flex; width: 100%; gap: 10px; height: 30px; flex-wrap: wrap; overflow: hidden; } 
 
